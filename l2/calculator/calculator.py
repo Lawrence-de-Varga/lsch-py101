@@ -7,20 +7,19 @@ while not_numbers:
     number2 = input("Please enter the second number: ")
 
     try:
-        int(number1)
-        int(number2)
+        number1 = int(number1)
+        number2 = int(number2)
 
     except ValueError:
         print("Please enter two valid integers.")
         print()
     else:
-        number1 = int(number1)
-        number2 = int(number2)
         not_numbers = False
 
 possible_operation = False
 
 while not possible_operation:
+    print()
     print("Which operation would you like to perform? ")
     print("1: Addition, 2: Subtraction, 3: Multiplication, 4: Division.")
 
@@ -30,8 +29,6 @@ while not possible_operation:
         print()
         print("Please enter one of these digits corresponding to the desired operation.")
         print("1, 2, 3, 4")
-        print()
-        continue
     else:
         possible_operation = True
 
